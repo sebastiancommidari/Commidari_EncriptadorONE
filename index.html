@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+    <title>Challenge Alura - Encriptador</title>
+</head>
+
+<body>
+    <input type="text" id="txtEncriptado">
+    <textarea name="resultado" id="txtDesencriptado" cols="30" rows="10"></textarea>
+    <button type="button" id="botonEncriptar">Encriptar</button>
+    <button type="button" id="botonDesencriptar">Desencriptar</button>
+    <button type="button" id="botonCopiar">Copiar</button>
+</body>
+
+<script>
+    var boton = document.querySelector("#botonEncriptar")
+    boton.onclick = encriptar;
+
+    var boton2 = document.querySelector("#botonDesencriptar")
+    boton2.onclick = desencriptar;
+
+    var boton3 = document.querySelector("#botonCopiar")
+    boton3.onclick = copiar;
+</script>
+
+</html>
