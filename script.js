@@ -8,10 +8,20 @@ function encriptar(){
     var txtEncriptado = txtEncriptado .replace(/a/img, "ai");
     var txtEncriptado = txtEncriptado .replace(/u/img, "ufat");
 
+    
+
+    document.getElementById("txtDesencriptado").style.backgroundImage="none";
+    document.getElementById("txtDesencriptado").style.display="inherit";
     document.getElementById("txtDesencriptado").innerHTML = txtEncriptado;
 
     document.getElementById("botonCopiar").style.display="show";
     document.getElementById("botonCopiar").style.display="inherit";
+
+    document.getElementById("cont-subtitulo").style.display="none";
+    document.getElementById("cont-parrafo").style.display="none";
+
+    
+
 
 }
 
